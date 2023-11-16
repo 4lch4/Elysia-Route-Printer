@@ -6,17 +6,14 @@
   "keywords": [
     "4lch4"
   ],
-  "files": [
-    "dist"
-  ],
-  "homepage": "https://github.com/4lch4/Elysia-Printer",
+  "homepage": "https://github.com/4lch4/Elysia-Route-Printer",
   "bugs": {
-    "email": "bugs@4lch4.email",
-    "url": "https://github.com/4lch4/Elysia-Printer/issues"
+    "url": "https://github.com/4lch4/Elysia-Route-Printer/issues",
+    "email": "bugs@4lch4.email"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com/4lch4/Elysia-Printer.git"
+    "url": "git@github.com/4lch4/Elysia-Route-Printer.git"
   },
   "license": "MIT",
   "author": {
@@ -27,12 +24,15 @@
   "type": "module",
   "exports": "./dist/index.js",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "bun run dist/index.js",
-    "dev": "bun run --watch src/index.ts",
-    "build": "tsc && tsc-alias",
-    "pretty": "prettier --write .",
+    "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "lint": "prettier -c .",
+    "prepublishOnly": "bun run build",
+    "pretty": "prettier --write .",
     "test": "bun test"
   },
   "dependencies": {
