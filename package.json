@@ -1,7 +1,7 @@
 {
   "name": "@4lch4/elysia-route-printer",
   "displayName": "Elysia Route Printer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A package that displays the routes registered to an Elysia API as a table.",
   "keywords": [
     "4lch4"
