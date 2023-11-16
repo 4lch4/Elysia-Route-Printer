@@ -1,5 +1,6 @@
 import Table from 'cli-table'
 import { HTTPMethod, InternalRoute } from 'elysia'
+import * as pc from 'picocolors'
 
 /** An interface for the options that can be passed to the {@link printRoutes} function. */
 export type PrintRoutesOptions = {
