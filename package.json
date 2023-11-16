@@ -1,5 +1,5 @@
 {
-  "name": "@4lch4/elysia-route-printer",
+  "name": "elysia-route-printer",
   "displayName": "Elysia Route Printer",
   "version": "0.0.5",
   "description": "A package that displays the routes registered to an Elysia API as a table.",
@@ -51,8 +51,5 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
