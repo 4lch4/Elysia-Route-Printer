@@ -1,0 +1,54 @@
+{
+  "name": "@4lch4/elysia-route-printer",
+  "displayName": "Elysia Route Printer",
+  "version": "0.0.0",
+  "description": "A package that displays the routes registered to an Elysia API as a table.",
+  "keywords": [
+    "4lch4"
+  ],
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/4lch4/Elysia-Printer",
+  "bugs": {
+    "email": "bugs@4lch4.email",
+    "url": "https://github.com/4lch4/Elysia-Printer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/4lch4/Elysia-Printer.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "4lch4",
+    "email": "hey@4lch4.email",
+    "url": "https://4lch4.com"
+  },
+  "type": "module",
+  "exports": "./dist/index.js",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "bun run dist/index.js",
+    "dev": "bun run --watch src/index.ts",
+    "build": "tsc && tsc-alias",
+    "pretty": "prettier --write .",
+    "lint": "prettier -c .",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "cli-table": "^0.3.11",
+    "elysia": "^0.7.28"
+  },
+  "devDependencies": {
+    "@types/cli-table": "^0.3.4",
+    "bun-types": "^1.0.12",
+    "prettier": "^3.1.0",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.4.6",
+    "tsc-alias": "^1.8.8",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
